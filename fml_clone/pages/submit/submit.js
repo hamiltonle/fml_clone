@@ -1,8 +1,6 @@
 // pages/submit/submit.js
 // Require Leancloud library (the av-weapp-min.js file you just add).
 const AV = require('../../utils/av-weapp-min.js');
-
-// Require form model
 const Form = require('../../model/form.js');
 
 var app = getApp()
@@ -20,13 +18,6 @@ Page({
     console.log(e.detail.value.fml)
     var fml = e.detail.value.fml
     var name = e.detail.value.name
-    // var review = e.detail.value.review
-    // var recommendation = e.detail.value.recommendation
-    // var learntocode = e.detail.value.learntocode
-    // var heardAbout = e.detail.value.heardAbout
-    // var nickName = e.detail.value.nickName
-    // var email = e.detail.value.email
-    // var phone = e.detail.value.phone
 
     // Leancloud permissions
     var acl = new AV.ACL();
@@ -45,9 +36,6 @@ Page({
         url: '/pages/index/index?form=1'
       });
     }, 2000);
-  
-
-
   },
 
   onLoad: function (options) {

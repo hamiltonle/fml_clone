@@ -9,14 +9,24 @@
 <view class="container-grey">
   <view class="card-container">
     <block wx:for="{{forms}}" wx:for-item="form" wx:key="objectId">
-      <view class="card">
+      <view class="card" id="item-{{form.index}}">
         <view class="text-view">
           <text>{{form.fml}}</text>
-          <text data-id="{{form.objectId}}" >{{form.name}}</text>
+        <view class="text-view">
         </view>
-        <view class="emoticon-view">
-          <text>{{votes}}</text><image class="emoji" src="../../image/emoji-joy.png"/>
+          <text>{{form.objectId}}</text>
         </view>
+        <button class="emoticon-view" bindtap="add" data-id="{{form.objectId}}">
+          <text >- {{form.name}}, </text>
+          <!--<view wx:if="{{true}}"> Votes: {{votes + form.votes}}</view>
+          <view wx:if="{{10 > 5}}"> 1 </view>-->
+
+          
+          <text>Votes: {{votes}}</text>
+          
+          <text>Votes: {{form.votes}}</text>
+          <image class="emoji" src="../../image/emoji-joy.png"/>
+        </button>
       </view>
     </block>
   </view>
