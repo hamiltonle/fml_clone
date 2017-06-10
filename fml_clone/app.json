@@ -11,21 +11,21 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "backgroundColor": "#FFFFFE",
+    "backgroundColor": "#00A3EC",
     "borderStyle": "#D3D3D3",
-    "selectedColor": "#D03232",
+    "selectedColor": "#333",
     "color": "#131313",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/form.png",
-        "selectedIconPath": "image/form-hover.png",
+        "iconPath": "image/random.png",
+        "selectedIconPath": "image/selected-random.png",
         "text": "Random"
       },
       {
         "pagePath": "pages/submit/submit",
-        "iconPath": "image/about.png",
-        "selectedIconPath": "image/about-hover.png",
+        "iconPath": "image/submit.png",
+        "selectedIconPath": "image/selected-submit.png",
         "text": "Submit your FML"
       }
     ]

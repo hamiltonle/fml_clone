@@ -19,3 +19,26 @@
 .usermotto {
   margin-top: 200px;
 }
+
+
+.card-container {
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 10rpx 45rpx;
+  margin-top: 20px;
+  border: 1px solid #FFFFFF;
+  border-left: 5px solid #00A3EC;
+}
+
+.emoticon-view {
+  text-align: right;
+}
+
+.emoji {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}

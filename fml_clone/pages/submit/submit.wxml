@@ -1,2 +1,38 @@
 <!--pages/submit/submit.wxml-->
-<text>pages/submit/submit.wxml</text>
+
+<view class="container container-blue">
+  <!--<view  bindtap="bindViewTap" class="userinfo">-->
+  <view>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+  <view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+
+
+<!-- pages/form/form.wxml -->
+<view class="container-grey">
+  <view class="form-container">
+    <form bindsubmit="bindFormSubmit" class="">
+      <view class="text-center">
+        <text class="h2">Got an FML moment?</text>
+      </view>
+      
+      <view class="text-center">
+        <text class="h2">Let the world know!!!</text>
+      </view>
+
+      <view class="text-area-wrp">
+        <textarea class="input-short input-margin textbox-input" name="name" maxlength="-1" placeholder="name" />
+      </view>
+      
+      <view class="text-area-wrp">
+        <textarea class="input-tall input-margin textbox-input" name="fml" maxlength="-1" placeholder="Your FML..."/>
+      </view>
+
+      <button type="primary" form-type="submit">Send</button>
+
+    </form>
+  </view>
+</view>

@@ -5,6 +5,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 100rpx 0;
   box-sizing: border-box;
 } 
+
+
+.container-blue {
+  background-color: #00A3EC;
+}
+
+.container-grey {
+  background-color: #F6F6F6;
+}
+
+.h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.text-underline {
+  border-bottom: 4px solid white;
+}

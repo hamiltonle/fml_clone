@@ -1,4 +1,17 @@
 //app.js
+
+// Require Leancloud library (the av-weapp-min.js file you just add).
+const AV = require('utils/av-weapp-min.js');
+
+
+// Initialization of the app
+AV.init({
+  appId: 'BhqiTEj6SBYNnwI0xIMFlUUa-gzGzoHsz',
+  appKey: '4TtkqHiCIlxQEehT2fSdcTdM',
+});
+
+// console.log(AV)
+
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
@@ -28,3 +41,4 @@ App({
     userInfo:null
   }
 })
+

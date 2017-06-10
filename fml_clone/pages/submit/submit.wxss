@@ -1,1 +1,54 @@
 /* pages/submit/submit.wxss */
+
+.h2 {
+  font-size: 24px;
+}
+
+.container-grey {
+  background-color: #F6F6F6;
+}
+
+.userinfo-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.userinfo-nickname {
+  color: white;
+  font-style: bold;
+}
+
+
+.form-padding {
+  padding: 20px;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+
+.textbox-input {
+  /*color: white;*/
+  background-color: white;
+  border: 1px solid white;
+}
+
+.input-short {
+  height: 30px;
+  margin: 10px;
+}
+
+.input-tall {
+  height: 120px;
+  margin: 10px;
+}
+
+.input-margin {
+  margin: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+

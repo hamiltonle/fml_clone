@@ -1,5 +1,32 @@
 <!--index.wxml-->
-<view class="container">
+
+<view class="container container-blue">
+  <text class="h1">FML:</text>
+  <text class="h1 text-underline">Your Everyday Life Stories</text>
+</view>
+
+
+<view class="container-grey">
+  <view class="card-container">
+    <block wx:for="{{forms}}" wx:for-item="form" wx:key="objectId">
+      <view class="card">
+        <view class="text-view">
+          <text>{{form.fml}}</text>
+          <text data-id="{{form.objectId}}" >{{form.name}}</text>
+        </view>
+        <view class="emoticon-view">
+          <text>{{votes}}</text><image class="emoji" src="../../image/emoji-joy.png"/>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+
+
+<!--<view class="container container-blue">
+
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -7,4 +34,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-</view>
+</view>-->
+
+
+
